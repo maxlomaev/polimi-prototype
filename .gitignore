@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Editor / local dev config (not needed for the live site)
+.claude/
+
+# Figma reference exports (kept local; the site uses emoji, not these)
+Flow*.png
