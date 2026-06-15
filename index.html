@@ -26,29 +26,29 @@
     min-height:100vh;padding:24px;
   }
 
-  /* ---------- Phone ---------- */
+  /* ---------- Phone (iPhone 17 Pro Max · 440×956 pt) ---------- */
   .phone{
-    width:393px;height:830px;background:#000;border-radius:54px;padding:13px;
+    width:440px;height:956px;background:#000;border-radius:62px;padding:14px;
     box-shadow:0 30px 70px rgba(13,34,53,.4);position:relative;flex:0 0 auto;
   }
-  .screenwrap{width:100%;height:100%;background:var(--bg);border-radius:42px;overflow:hidden;position:relative}
-  .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:135px;height:30px;background:#000;border-radius:0 0 20px 20px;z-index:60}
+  .screenwrap{width:100%;height:100%;background:var(--bg);border-radius:48px;overflow:hidden;position:relative}
+  .notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:118px;height:34px;background:#000;border-radius:20px;z-index:60}
 
   .screen{position:absolute;inset:0;display:none;flex-direction:column;background:var(--bg);overflow:hidden;will-change:transform,opacity}
   .screen.active{display:flex}
   .scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
   .scroll::-webkit-scrollbar{width:0}
 
-  .statusbar{height:52px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 26px 6px;font-size:15px;font-weight:600;color:var(--navy);flex:0 0 auto}
-  .statusbar .right{display:flex;gap:6px;align-items:center;font-size:13px}
+  .statusbar{height:56px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 28px 8px;font-size:13px;font-weight:600;color:var(--navy);flex:0 0 auto}
+  .statusbar .right{display:flex;gap:6px;align-items:center;font-size:11px}
 
-  .pad{padding:0 22px}
-  .h-title{font-size:30px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+  .pad{padding:0 20px}
+  .h-title{font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-.4px}
   .row{display:flex;align-items:center}
   .between{justify-content:space-between}
-  .back,.iconbtn{font-size:24px;color:var(--navy);background:none;border:none;cursor:pointer;padding:0 8px 0 0;line-height:1;transition:transform .12s}
+  .back,.iconbtn{font-size:18px;color:var(--navy);background:none;border:none;cursor:pointer;padding:0 8px 0 0;line-height:1;transition:transform .12s}
   .back:active{transform:scale(.85)}
-  .link{color:var(--blue);font-weight:600;cursor:pointer;background:none;border:none;font-size:15px;transition:opacity .12s}
+  .link{color:var(--blue);font-weight:600;cursor:pointer;background:none;border:none;font-size:13px;transition:opacity .12s}
   .link:active{opacity:.5}
   .muted{color:var(--muted)}
   .center{text-align:center}
@@ -56,148 +56,148 @@
   .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--card-shadow)}
   .tap{cursor:pointer;transition:transform .14s ease, box-shadow .14s ease}
   .tap:active{transform:scale(.978)}
-  .field{background:var(--field);border:none;border-radius:14px;padding:16px;width:100%;font-size:16px;color:var(--ink);outline:none;font-family:inherit}
+  .field{background:var(--field);border:none;border-radius:14px;padding:14px 16px;width:100%;font-size:14px;color:var(--ink);outline:none;font-family:inherit}
   .field::placeholder{color:#9aa6b3}
-  .label{font-size:15px;font-weight:700;color:var(--navy);margin:0 0 8px}
-  .btn-primary{width:100%;border:none;border-radius:16px;background:var(--grad);color:#fff;font-size:17px;font-weight:700;padding:17px;cursor:pointer;font-family:inherit;box-shadow:0 8px 18px rgba(29,95,156,.28);transition:transform .12s, box-shadow .12s}
+  .label{font-size:13px;font-weight:700;color:var(--navy);margin:0 0 8px}
+  .btn-primary{width:100%;border:none;border-radius:15px;background:var(--grad);color:#fff;font-size:15px;font-weight:700;padding:15px;cursor:pointer;font-family:inherit;box-shadow:0 8px 18px rgba(29,95,156,.28);transition:transform .12s, box-shadow .12s}
   .btn-primary:active{transform:scale(.97);box-shadow:0 4px 10px rgba(29,95,156,.3)}
-  .btn-ghost{width:100%;background:none;border:none;color:var(--muted);font-size:16px;padding:14px;cursor:pointer;font-family:inherit;transition:opacity .12s}
+  .btn-ghost{width:100%;background:none;border:none;color:var(--muted);font-size:14px;padding:13px;cursor:pointer;font-family:inherit;transition:opacity .12s}
   .btn-ghost:active{opacity:.5}
   .segment{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px;gap:2px}
-  .segment .seg{flex:1;text-align:center;padding:11px 6px;border-radius:999px;font-size:14px;color:var(--muted);font-weight:600;cursor:pointer;white-space:nowrap;transition:color .2s}
+  .segment .seg{flex:1;text-align:center;padding:10px 6px;border-radius:999px;font-size:12px;color:var(--muted);font-weight:600;cursor:pointer;white-space:nowrap;transition:color .2s}
   .segment .seg.on{background:var(--grad-rev);color:#fff;box-shadow:0 4px 10px rgba(29,95,156,.25)}
 
   /* bottom nav */
-  .tabbar{display:flex;justify-content:space-around;padding:10px 8px 26px;background:var(--bg-soft);border-top:1px solid var(--line)}
-  .tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;color:#5d6b7a;cursor:pointer;flex:1;transition:transform .15s,color .15s}
-  .tab svg{width:24px;height:24px}
+  .tabbar{display:flex;justify-content:space-around;padding:9px 8px 24px;background:var(--bg-soft);border-top:1px solid var(--line)}
+  .tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10px;color:#5d6b7a;cursor:pointer;flex:1;transition:transform .15s,color .15s}
+  .tab svg{width:22px;height:22px}
   .tab:active{transform:scale(.88)}
   .tab.on{color:var(--navy);font-weight:700}
   .tabslot{flex:0 0 auto}
-  .home-ind{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:120px;height:5px;border-radius:3px;background:#0d2235;opacity:.85;z-index:40}
+  .home-ind{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:128px;height:5px;border-radius:3px;background:#0d2235;opacity:.85;z-index:40}
 
   /* ===== HOME ===== */
-  .avatar{width:46px;height:46px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
-  .balhero{background:var(--grad);border-radius:22px;padding:20px;color:#fff;box-shadow:0 12px 26px rgba(29,95,156,.3)}
-  .balhero .l{font-size:14px;opacity:.85}
-  .balhero .a{font-size:36px;font-weight:800;margin-top:2px}
-  .balhero .v{font-size:13px;opacity:.9;margin-top:12px;display:flex;align-items:center;gap:6px}
+  .avatar{width:42px;height:42px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+  .balhero{background:var(--grad);border-radius:20px;padding:18px;color:#fff;box-shadow:0 12px 26px rgba(29,95,156,.3)}
+  .balhero .l{font-size:12px;opacity:.85}
+  .balhero .a{font-size:28px;font-weight:800;margin-top:2px}
+  .balhero .v{font-size:11px;opacity:.9;margin-top:12px;display:flex;align-items:center;gap:6px}
   .qa{display:flex;justify-content:space-between;margin:18px 0 6px}
-  .qa .q{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:#46586b;cursor:pointer;flex:1;transition:transform .14s}
+  .qa .q{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11px;color:#46586b;cursor:pointer;flex:1;transition:transform .14s}
   .qa .q:active{transform:scale(.9)}
-  .qa .q .c{width:54px;height:54px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:var(--card-shadow)}
+  .qa .q .c{width:50px;height:50px;border-radius:15px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:var(--card-shadow)}
 
   /* transactions */
-  .balcard{padding:18px 20px;border:1.5px solid #cfe0ef}
-  .balcard .lbl{font-size:14px;color:#8190a0;font-weight:600}
-  .balcard .amt{font-size:34px;font-weight:800;color:var(--navy);margin-top:2px}
-  .txn{display:flex;align-items:center;gap:14px;padding:14px 0}
-  .txn .ava{width:46px;height:46px;border-radius:50%;background:#eef1f5;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:20px}
+  .balcard{padding:16px 18px;border:1.5px solid #cfe0ef}
+  .balcard .lbl{font-size:12px;color:#8190a0;font-weight:600}
+  .balcard .amt{font-size:26px;font-weight:800;color:var(--navy);margin-top:2px}
+  .txn{display:flex;align-items:center;gap:13px;padding:12px 0}
+  .txn .ava{width:40px;height:40px;border-radius:50%;background:#eef1f5;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:17px}
   .txn .info{flex:1;min-width:0}
-  .txn .nm{font-size:16px;font-weight:700;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .txn .tm{font-size:14px;color:var(--muted);margin-top:2px}
-  .txn .val{font-size:16px;font-weight:700;color:var(--navy);white-space:nowrap}
-  .sectlabel{font-size:15px;color:#7c8a99;margin:18px 0 2px}
+  .txn .nm{font-size:14px;font-weight:700;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .txn .tm{font-size:12px;color:var(--muted);margin-top:2px}
+  .txn .val{font-size:14px;font-weight:700;color:var(--navy);white-space:nowrap}
+  .sectlabel{font-size:13px;color:#7c8a99;margin:16px 0 2px}
   .sectlabel.pending{color:var(--blue);font-weight:700}
-  .filterbtn{width:58px;height:58px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;box-shadow:var(--card-shadow);transition:transform .14s}
+  .filterbtn{width:52px;height:52px;border-radius:15px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;box-shadow:var(--card-shadow);transition:transform .14s;font-size:18px}
   .filterbtn:active{transform:scale(.92)}
-  .searchbar{flex:1;background:#fff;border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;gap:10px;padding:0 16px;height:58px;box-shadow:var(--card-shadow)}
-  .searchbar input{border:none;outline:none;background:none;font-size:16px;width:100%;font-family:inherit}
+  .searchbar{flex:1;background:#fff;border:1px solid var(--line);border-radius:15px;display:flex;align-items:center;gap:10px;padding:0 16px;height:52px;box-shadow:var(--card-shadow)}
+  .searchbar input{border:none;outline:none;background:none;font-size:14px;width:100%;font-family:inherit}
 
   /* bottom sheet */
   .sheet-scrim{position:absolute;inset:0;background:rgba(15,30,45,.45);opacity:0;pointer-events:none;transition:opacity .28s;z-index:50}
   .sheet-scrim.show{opacity:1;pointer-events:auto}
-  .sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:28px 28px 0 0;padding:22px 22px 28px;transform:translateY(100%);transition:transform .34s cubic-bezier(.33,0,.2,1);max-height:90%;overflow-y:auto;z-index:55;box-shadow:0 -10px 40px rgba(13,34,53,.18)}
+  .sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:28px 28px 0 0;padding:22px 20px 28px;transform:translateY(100%);transition:transform .34s cubic-bezier(.33,0,.2,1);max-height:90%;overflow-y:auto;z-index:55;box-shadow:0 -10px 40px rgba(13,34,53,.18)}
   .sheet.show{transform:translateY(0)}
 
   /* transfer */
   .progress{height:5px;background:#e0e6ee;border-radius:3px;flex:1;overflow:hidden}
   .progress>span{display:block;height:100%;width:0;background:var(--grad);border-radius:3px}
-  .recip{display:flex;gap:14px;overflow-x:auto;padding:4px 0 6px}
+  .recip{display:flex;gap:12px;overflow-x:auto;padding:4px 0 6px}
   .recip::-webkit-scrollbar{height:0}
-  .recip .r{flex:0 0 auto;text-align:center;width:70px;cursor:pointer}
-  .recip .r .c{width:70px;height:70px;border-radius:50%;background:#e7eef6;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:#33536f;transition:transform .14s}
+  .recip .r{flex:0 0 auto;text-align:center;width:60px;cursor:pointer}
+  .recip .r .c{width:58px;height:58px;border-radius:50%;background:#e7eef6;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#33536f;transition:transform .14s}
   .recip .r:active .c{transform:scale(.9)}
-  .recip .r .nm{font-size:14px;color:#7c8a99;margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .ibanvalid{color:var(--green);font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px;margin-top:10px}
-  .badge{background:#cfe4f3;color:#1d5f9c;font-size:12px;font-weight:800;padding:3px 9px;border-radius:7px}
-  .check{width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;flex:0 0 auto}
-  .ttype{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;cursor:pointer;background:#fff;transition:border-color .2s, box-shadow .2s, transform .12s}
+  .recip .r .nm{font-size:12px;color:#7c8a99;margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ibanvalid{color:var(--green);font-weight:600;font-size:12px;display:flex;align-items:center;gap:8px;margin-top:10px}
+  .badge{background:#cfe4f3;color:#1d5f9c;font-size:11px;font-weight:800;padding:3px 9px;border-radius:7px}
+  .check{width:20px;height:20px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;flex:0 0 auto}
+  .ttype{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:13px 16px;margin-bottom:10px;cursor:pointer;background:#fff;transition:border-color .2s, box-shadow .2s, transform .12s}
   .ttype:active{transform:scale(.985)}
   .ttype.on{border-color:var(--blue);box-shadow:0 0 0 1.5px var(--blue) inset}
-  .ttype .ic{width:30px;text-align:center;font-size:18px}
-  .ttype .t{font-weight:700;font-size:16px;color:var(--navy)}
-  .ttype .s{font-size:13px;color:var(--muted)}
-  .radio{width:22px;height:22px;border-radius:50%;border:2px solid #c2ccd8;flex:0 0 auto;transition:.2s}
+  .ttype .ic{width:28px;text-align:center;font-size:15px}
+  .ttype .t{font-weight:700;font-size:14px;color:var(--navy)}
+  .ttype .s{font-size:11px;color:var(--muted)}
+  .radio{width:20px;height:20px;border-radius:50%;border:2px solid #c2ccd8;flex:0 0 auto;transition:.2s}
   .ttype.on .radio{border-color:var(--blue);background:var(--blue);box-shadow:inset 0 0 0 3px #fff}
-  .reviewcard .rr{display:flex;padding:16px;border-bottom:1px solid var(--line)}
+  .reviewcard .rr{display:flex;padding:14px 16px;border-bottom:1px solid var(--line)}
   .reviewcard .rr:last-child{border-bottom:none}
-  .reviewcard .k{width:62px;color:var(--muted);font-size:13px;letter-spacing:.5px}
-  .infobox{border:1px solid #bcd3ea;background:#eef5fc;border-radius:14px;padding:14px 16px;color:var(--blue);font-size:14px;font-weight:600;display:flex;gap:12px;line-height:1.4}
+  .reviewcard .k{width:58px;color:var(--muted);font-size:11px;letter-spacing:.5px}
+  .infobox{border:1px solid #bcd3ea;background:#eef5fc;border-radius:14px;padding:13px 15px;color:var(--blue);font-size:12px;font-weight:600;display:flex;gap:11px;line-height:1.45}
   .infobox.red{border-color:#e7c3bd;background:#fbeeec;color:var(--red)}
 
   /* spending */
-  .fcard{padding:16px 18px;margin-bottom:14px;border:1px solid #cfe0ef}
+  .fcard{padding:15px 16px;margin-bottom:13px;border:1px solid #cfe0ef}
   .fcard .top{display:flex;justify-content:space-between;align-items:flex-start}
-  .fcard .h{font-size:14px;color:#7c8a99;font-weight:600}
-  .fcard .big{font-size:26px;font-weight:800;color:var(--navy)}
+  .fcard .h{font-size:12px;color:#7c8a99;font-weight:600}
+  .fcard .big{font-size:21px;font-weight:800;color:var(--navy)}
   .bar{height:7px;background:#dfe6ee;border-radius:4px;overflow:hidden;margin-top:12px}
   .bar>span{display:block;height:100%;width:0;background:linear-gradient(90deg,#9fc0c0,#3a9d8e)}
   .bar.budget>span{background:var(--grad)}
-  .analysis{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:10px;cursor:pointer}
-  .analysis .ic{width:34px;height:34px;border-radius:9px;background:#eaf2f9;display:flex;align-items:center;justify-content:center;font-size:18px}
-  .chart{display:flex;justify-content:space-around;align-items:flex-end;height:240px;margin:8px 0 4px}
+  .analysis{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;cursor:pointer;font-size:14px}
+  .analysis .ic{width:32px;height:32px;border-radius:9px;background:#eaf2f9;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .chart{display:flex;justify-content:space-around;align-items:flex-end;height:230px;margin:8px 0 4px}
   .grp{display:flex;flex-direction:column;align-items:center;width:30%}
-  .bars{display:flex;gap:8px;align-items:flex-end;height:210px}
-  .bcol{width:42px;border-radius:6px 6px 0 0;height:0}
+  .bars{display:flex;gap:8px;align-items:flex-end;height:200px}
+  .bcol{width:44px;border-radius:6px 6px 0 0;height:0}
   .bin{background:#3a9d8e}
   .bout{background:#1d5f9c;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 6px,transparent 6px 12px)}
   .bin.est{background:#cfe7e2;border:2px dashed #3a9d8e}
   .bout.est{background:#d3e0ee;border:2px dashed #1d5f9c}
-  .glabel{font-size:14px;color:#7c8a99;margin-top:8px}
+  .glabel{font-size:12px;color:#7c8a99;margin-top:8px}
   .legend{display:flex;flex-direction:column;gap:10px;margin:6px 0 14px}
-  .legrow{display:flex;align-items:center;gap:10px;font-size:15px;color:#445}
-  .dot{width:18px;height:18px;border-radius:50%}
+  .legrow{display:flex;align-items:center;gap:10px;font-size:13px;color:#445}
+  .dot{width:16px;height:16px;border-radius:50%}
   .iecard{display:flex;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:12px}
-  .iecard .col{flex:1;padding:14px 12px;border-right:1px solid var(--line)}
+  .iecard .col{flex:1;padding:13px 12px;border-right:1px solid var(--line)}
   .iecard .col:last-child{border-right:none}
-  .iecard .k{font-size:13px;color:var(--muted)}
-  .iecard .v{font-size:18px;font-weight:800;margin-top:4px;color:var(--navy)}
+  .iecard .k{font-size:11px;color:var(--muted)}
+  .iecard .v{font-size:15px;font-weight:800;margin-top:4px;color:var(--navy)}
   .iecard .v.green{color:var(--green)}
   /* donut */
   .donutwrap{display:flex;justify-content:center;margin:6px 0 14px}
   #donut{transform-origin:center}
   .donutseg{transition:stroke-dashoffset .9s cubic-bezier(.3,.7,.3,1)}
-  .catrow{display:flex;align-items:center;gap:14px;padding:13px 0;border-top:1px solid var(--line);cursor:pointer}
+  .catrow{display:flex;align-items:center;gap:13px;padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
   .catrow:first-child{border-top:none}
-  .catrow .ci{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:18px;flex:0 0 auto}
-  .catrow .nm{font-weight:700;font-size:16px;color:var(--navy)}
-  .catrow .sub{font-size:13px;color:var(--muted);margin-top:2px}
-  .catrow .amt{font-weight:700;font-size:15px;color:var(--navy)}
-  .catrow .delta{font-size:13px;margin-top:2px;font-weight:600}
+  .catrow .ci{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+  .catrow .nm{font-weight:700;font-size:14px;color:var(--navy)}
+  .catrow .sub{font-size:11px;color:var(--muted);margin-top:2px}
+  .catrow .amt{font-weight:700;font-size:13px;color:var(--navy)}
+  .catrow .delta{font-size:11px;margin-top:2px;font-weight:600}
   .up{color:#d9534f}.down{color:var(--green)}.flat{color:var(--muted)}
-  .dropdown{background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 14px;font-weight:600;font-size:14px;display:flex;align-items:center;gap:6px;cursor:pointer}
+  .dropdown{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 13px;font-weight:600;font-size:12px;display:flex;align-items:center;gap:6px;cursor:pointer}
   /* range slider */
   input[type=range]{-webkit-appearance:none;width:100%;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--teal));outline:none;margin:14px 0}
-  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:#fff;border:3px solid var(--blue);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--blue);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.2)}
   /* calendar */
   .cal{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--card-shadow)}
-  .calhead{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:16px;color:var(--navy);margin-bottom:10px}
+  .calhead{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;color:var(--navy);margin-bottom:10px}
   .calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
-  .caldow{font-size:12px;color:var(--muted2);padding:6px 0}
-  .calday{padding:9px 0;font-size:14px;border-radius:50%;cursor:pointer}
+  .caldow{font-size:11px;color:var(--muted2);padding:6px 0}
+  .calday{padding:9px 0;font-size:12px;border-radius:50%;cursor:pointer}
   .calday.dim{color:#cfd6df}
   .calday.range{background:#dfeefc;border-radius:0}
   .calday.start,.calday.end{background:var(--blue);color:#fff;border-radius:50%}
   .preset{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-  .chip{background:#e4eefa;color:var(--blue);border:none;border-radius:9px;padding:9px 13px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:transform .12s}
+  .chip{background:#e4eefa;color:var(--blue);border:none;border-radius:9px;padding:8px 12px;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit;transition:transform .12s}
   .chip:active{transform:scale(.93)}
   .map{height:150px;background:linear-gradient(135deg,#dfe6ec,#eef2f6);position:relative;background-image:linear-gradient(#cdd6df 1px,transparent 1px),linear-gradient(90deg,#cdd6df 1px,transparent 1px);background-size:28px 28px}
   .pinwrap{position:absolute;left:14px;bottom:10px;background:#fff;border-radius:10px;padding:8px 12px;box-shadow:0 4px 10px rgba(0,0,0,.12)}
-  .detailrow{display:flex;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line);font-size:15px}
+  .detailrow{display:flex;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--line);font-size:13px}
   .detailrow:last-child{border-bottom:none}
   .detailrow .k{color:var(--muted)}
-  .toast{position:absolute;bottom:30px;left:50%;transform:translateX(-50%) translateY(20px);background:#0d2235;color:#fff;padding:12px 20px;border-radius:30px;font-size:14px;opacity:0;transition:.3s;z-index:80;pointer-events:none;max-width:80%;text-align:center}
+  .toast{position:absolute;bottom:34px;left:50%;transform:translateX(-50%) translateY(20px);background:#0d2235;color:#fff;padding:11px 20px;border-radius:30px;font-size:12px;opacity:0;transition:.3s;z-index:80;pointer-events:none;max-width:80%;text-align:center}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
   @keyframes pop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
   .pop{animation:pop .5s cubic-bezier(.3,1.4,.5,1) both}
@@ -215,7 +215,7 @@
       <div class="scroll">
         <div class="pad">
           <div class="row between" style="margin:8px 0 18px">
-            <div class="row" style="gap:12px"><div class="avatar">ML</div><div><div class="muted" style="font-size:13px">Good morning,</div><div style="font-weight:800;font-size:18px;color:var(--navy)">Max</div></div></div>
+            <div class="row" style="gap:12px"><div class="avatar">ML</div><div><div class="muted" style="font-size:11px">Good morning,</div><div style="font-weight:800;font-size:15px;color:var(--navy)">Max</div></div></div>
             <span class="iconbtn">🔔</span>
           </div>
           <div class="balhero tap" onclick="go('txn-list','forward')">
@@ -229,7 +229,7 @@
             <div class="q" onclick="toast('Cards — demo')"><div class="c">💳</div>Cards</div>
             <div class="q" onclick="go('sp-home','forward')"><div class="c">📊</div>Spending</div>
           </div>
-          <div class="row between" style="margin:22px 0 8px"><span style="font-weight:800;font-size:18px;color:var(--navy)">Recent</span><span class="link" onclick="go('txn-list','forward')">See all</span></div>
+          <div class="row between" style="margin:22px 0 8px"><span style="font-weight:800;font-size:15px;color:var(--navy)">Recent</span><span class="link" onclick="go('txn-list','forward')">See all</span></div>
           <div class="card" style="padding:0 16px" data-stagger>
             <div class="txn tap" onclick="go('txn-list','forward')"><div class="ava">🚆</div><div class="info"><div class="nm">Train Station Roma Termini</div><div class="tm">Today · 14:30</div></div><div class="val">-€85,00</div></div>
             <div class="txn tap" style="border-top:1px solid var(--line)" onclick="go('txn-list','forward')"><div class="ava">✈️</div><div class="info"><div class="nm">Airport Fiumicino</div><div class="tm">Today · 15:10</div></div><div class="val">-€110,00</div></div>
@@ -249,7 +249,7 @@
         <div class="pad">
           <div class="row between" style="margin-bottom:18px">
             <div class="row" style="gap:6px"><button class="back" onclick="back()">‹</button><span class="h-title">Transactions</span></div>
-            <span style="font-size:22px">◔</span>
+            <span style="font-size:17px">◔</span>
           </div>
           <div class="card balcard" style="margin-bottom:16px"><div class="lbl">Family Account</div><div class="amt">€170,95</div></div>
           <div class="row" style="gap:12px;margin-bottom:18px">
@@ -281,7 +281,7 @@
       </div>
       <div class="sheet-scrim" data-sheet="sheet-filter" onclick="closeSheet('sheet-filter')"></div>
       <div class="sheet" id="sheet-filter">
-        <div class="row" style="gap:10px;margin-bottom:18px"><button class="back" onclick="closeSheet('sheet-filter')">←</button><span style="font-size:22px;font-weight:800;color:var(--navy)">Transaction Filters</span></div>
+        <div class="row" style="gap:10px;margin-bottom:18px"><button class="back" onclick="closeSheet('sheet-filter')">←</button><span style="font-size:17px;font-weight:800;color:var(--navy)">Transaction Filters</span></div>
         <div class="label">Status</div>
         <div class="segment" style="margin-bottom:20px"><div class="seg on" onclick="segPick(this)">Posted</div><div class="seg" onclick="segPick(this)">Pending</div></div>
         <div class="label">Period</div>
@@ -290,8 +290,8 @@
           <div class="field" style="display:flex;align-items:center;gap:10px;color:#9aa6b3">📅 Select end date</div>
         </div>
         <div class="label">Amount</div>
-        <div style="display:flex;align-items:center;margin-bottom:10px"><input class="field" placeholder="Enter minimum amount"><span style="margin-left:-34px;font-size:18px">€</span></div>
-        <div style="display:flex;align-items:center;margin-bottom:20px"><input class="field" placeholder="Enter maximum amount"><span style="margin-left:-34px;font-size:18px">€</span></div>
+        <div style="display:flex;align-items:center;margin-bottom:10px"><input class="field" placeholder="Enter minimum amount"><span style="margin-left:-34px;font-size:15px">€</span></div>
+        <div style="display:flex;align-items:center;margin-bottom:20px"><input class="field" placeholder="Enter maximum amount"><span style="margin-left:-34px;font-size:15px">€</span></div>
         <div class="label">Category</div>
         <div class="field" style="display:flex;align-items:center;justify-content:space-between;color:#9aa6b3;margin-bottom:24px">Select Category <span>⌄</span></div>
         <button class="btn-primary" onclick="closeSheet('sheet-filter');toast('Filters applied')">Apply filters</button>
@@ -305,12 +305,12 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row" style="gap:8px;margin-bottom:18px"><button class="back" onclick="back()">←</button><span style="font-size:22px;font-weight:800;color:var(--navy)">Transaction Details</span></div>
+          <div class="row" style="gap:8px;margin-bottom:18px"><button class="back" onclick="back()">←</button><span style="font-size:17px;font-weight:800;color:var(--navy)">Transaction Details</span></div>
           <div class="center" style="margin:6px 0 18px">
-            <div style="font-size:34px" class="pop">🏧</div>
-            <div class="muted" style="margin-top:10px;font-size:15px">24 May  13:50</div>
-            <div style="font-size:36px;font-weight:800;color:var(--navy);margin-top:4px">-€90,00</div>
-            <div style="color:var(--blue);font-weight:600;font-size:17px;margin-top:2px">ATM Milano Centrale</div>
+            <div style="font-size:30px" class="pop">🏧</div>
+            <div class="muted" style="margin-top:10px;font-size:13px">24 May  13:50</div>
+            <div style="font-size:28px;font-weight:800;color:var(--navy);margin-top:4px">-€90,00</div>
+            <div style="color:var(--blue);font-weight:600;font-size:14px;margin-top:2px">ATM Milano Centrale</div>
           </div>
           <div class="card" style="margin-bottom:18px">
             <div class="detailrow"><span class="k">Paid with</span><span style="font-weight:600">Card •••• 1234</span></div>
@@ -318,7 +318,7 @@
             <div class="detailrow"><span class="k">Status</span><span style="color:var(--blue);font-weight:700">Pending</span></div>
             <div class="detailrow"><span class="k">Category</span><span style="font-weight:600">🚆 Transportation</span></div>
           </div>
-          <div class="card" style="overflow:hidden"><div class="map"><div class="pinwrap"><div style="font-weight:700;font-size:14px">ATM Biglietteria Centrale</div><div class="muted" style="font-size:12px">Centrale, Milano</div></div></div></div>
+          <div class="card" style="overflow:hidden"><div class="map"><div class="pinwrap"><div style="font-weight:700;font-size:12px">ATM Biglietteria Centrale</div><div class="muted" style="font-size:11px">Centrale, Milano</div></div></div></div>
         </div>
       </div>
       <div class="home-ind"></div>
@@ -330,12 +330,12 @@
       <div class="scroll">
         <div class="pad">
           <div class="row between" style="margin:6px 0 16px">
-            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:24px;font-weight:800;color:var(--navy)">Single Transfer</span></div>
+            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:18px;font-weight:800;color:var(--navy)">Single Transfer</span></div>
             <button class="link" onclick="goHome()">Cancel</button>
           </div>
-          <div class="row" style="gap:14px;margin-bottom:24px"><div class="progress"><span data-width="50%"></span></div><span class="muted" style="font-size:13px;font-weight:600">STEP 1/2</span></div>
-          <div style="font-size:24px;font-weight:800;color:var(--navy);margin-bottom:14px">Beneficiary Details</div>
-          <div class="muted" style="font-size:16px;margin-bottom:10px">Recent Recipients:</div>
+          <div class="row" style="gap:14px;margin-bottom:24px"><div class="progress"><span data-width="50%"></span></div><span class="muted" style="font-size:11px;font-weight:600">STEP 1/2</span></div>
+          <div style="font-size:18px;font-weight:800;color:var(--navy);margin-bottom:14px">Beneficiary Details</div>
+          <div class="muted" style="font-size:14px;margin-bottom:10px">Recent Recipients:</div>
           <div class="recip">
             <div class="r"><div class="c">GT</div><div class="nm">Giulia</div></div>
             <div class="r"><div class="c">GT</div><div class="nm">Giulia</div></div>
@@ -352,8 +352,8 @@
             <span style="font-weight:600">IT60 X054 2811 1010…</span>
             <span style="display:flex;align-items:center;gap:8px"><span class="badge">INTESA</span><span class="check">✓</span></span>
           </div>
-          <div class="ibanvalid"><span class="check" style="width:18px;height:18px;font-size:11px">✓</span> Valid Italian IBAN — Intesa Sanpaolo</div>
-          <label class="row" style="gap:12px;margin:18px 0 22px;cursor:pointer"><input type="checkbox" style="width:22px;height:22px"> <span class="muted" style="font-size:16px">Save beneficiary to contacts</span></label>
+          <div class="ibanvalid"><span class="check" style="width:16px;height:16px;font-size:10px">✓</span> Valid Italian IBAN — Intesa Sanpaolo</div>
+          <label class="row" style="gap:12px;margin:18px 0 22px;cursor:pointer"><input type="checkbox" style="width:20px;height:20px"> <span class="muted" style="font-size:14px">Save beneficiary to contacts</span></label>
         </div>
       </div>
       <div class="pad" style="padding-bottom:10px">
@@ -369,22 +369,22 @@
       <div class="scroll">
         <div class="pad">
           <div class="row between" style="margin:6px 0 16px">
-            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:24px;font-weight:800;color:var(--navy)">Single Transfer</span></div>
+            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:18px;font-weight:800;color:var(--navy)">Single Transfer</span></div>
             <button class="link" onclick="goHome()">Cancel</button>
           </div>
-          <div class="row" style="gap:14px;margin-bottom:22px"><div class="progress"><span data-width="100%"></span></div><span class="muted" style="font-size:13px;font-weight:600">STEP 2/2</span></div>
+          <div class="row" style="gap:14px;margin-bottom:22px"><div class="progress"><span data-width="100%"></span></div><span class="muted" style="font-size:11px;font-weight:600">STEP 2/2</span></div>
           <div class="label">Select Account</div>
           <div class="card" style="padding:14px 16px;display:flex;align-items:center;gap:12px;margin-bottom:18px">
-            <span style="width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center">€</span>
-            <div><div style="font-weight:700">Main Account</div><div class="muted" style="font-size:13px">IT60 •••• 1234</div></div>
-            <div style="margin-left:auto;text-align:right"><span style="font-weight:700">€2.180,45</span> <span class="muted">⌄</span></div>
+            <span style="width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center">€</span>
+            <div><div style="font-weight:700;font-size:14px">Main Account</div><div class="muted" style="font-size:11px">IT60 •••• 1234</div></div>
+            <div style="margin-left:auto;text-align:right"><span style="font-weight:700;font-size:14px">€2.180,45</span> <span class="muted">⌄</span></div>
           </div>
-          <div class="center" style="margin-bottom:20px"><div class="muted" style="font-size:15px">You are sending</div><div style="font-size:40px;font-weight:800;color:var(--navy)">€ 350,00</div><div class="muted">EUR</div></div>
-          <div class="muted" style="font-size:13px;letter-spacing:.5px;margin-bottom:10px">TRANSFER TYPE</div>
-          <div class="ttype on" onclick="pickType(this)"><span class="ic">🕐</span><div><div class="t">Standart</div><div class="s">1-2 working days</div></div><span style="margin-left:auto;margin-right:12px;color:var(--green);font-weight:600">Free</span><span class="radio"></span></div>
-          <div class="ttype" onclick="pickType(this)"><span class="ic">⚡</span><div><div class="t">Urgent</div><div class="s">Same day</div></div><span class="muted" style="margin-left:auto;margin-right:12px">€ 2,50</span><span class="radio"></span></div>
-          <div class="ttype" onclick="pickType(this)"><span class="ic">🚀</span><div><div class="t">Instant</div><div class="s">Within seconds</div></div><span class="muted" style="margin-left:auto;margin-right:12px">€ 0,50</span><span class="radio"></span></div>
-          <div class="muted" style="font-size:13px;letter-spacing:.5px;margin:18px 0 8px">EXECUTION DATE</div>
+          <div class="center" style="margin-bottom:20px"><div class="muted" style="font-size:13px">You are sending</div><div style="font-size:30px;font-weight:800;color:var(--navy)">€ 350,00</div><div class="muted" style="font-size:12px">EUR</div></div>
+          <div class="muted" style="font-size:11px;letter-spacing:.5px;margin-bottom:10px">TRANSFER TYPE</div>
+          <div class="ttype on" onclick="pickType(this)"><span class="ic">🕐</span><div><div class="t">Standart</div><div class="s">1-2 working days</div></div><span style="margin-left:auto;margin-right:12px;color:var(--green);font-weight:600;font-size:13px">Free</span><span class="radio"></span></div>
+          <div class="ttype" onclick="pickType(this)"><span class="ic">⚡</span><div><div class="t">Urgent</div><div class="s">Same day</div></div><span class="muted" style="margin-left:auto;margin-right:12px;font-size:13px">€ 2,50</span><span class="radio"></span></div>
+          <div class="ttype" onclick="pickType(this)"><span class="ic">🚀</span><div><div class="t">Instant</div><div class="s">Within seconds</div></div><span class="muted" style="margin-left:auto;margin-right:12px;font-size:13px">€ 0,50</span><span class="radio"></span></div>
+          <div class="muted" style="font-size:11px;letter-spacing:.5px;margin:18px 0 8px">EXECUTION DATE</div>
           <div class="field" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px"><span style="font-weight:600">Today  24 May 2026</span><span class="link">CHANGE</span></div>
         </div>
       </div>
@@ -401,22 +401,22 @@
       <div class="scroll">
         <div class="pad">
           <div class="row between" style="margin:6px 0 18px">
-            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:24px;font-weight:800;color:var(--navy)">Review Transfer</span></div>
+            <div class="row" style="gap:8px"><button class="back" onclick="back()">←</button><span style="font-size:18px;font-weight:800;color:var(--navy)">Review Transfer</span></div>
             <button class="link" onclick="goHome()">Cancel</button>
           </div>
           <div class="center" style="margin-bottom:20px;padding-bottom:18px;border-bottom:1px dashed var(--line)">
-            <div class="muted" style="font-size:16px">You are sending</div>
-            <div style="font-size:42px;font-weight:800;color:var(--navy)">€ 350,00</div>
-            <div style="color:var(--blue);font-weight:600">to Ceylin Aslan · arrives in 1–2 days</div>
+            <div class="muted" style="font-size:14px">You are sending</div>
+            <div style="font-size:30px;font-weight:800;color:var(--navy)">€ 350,00</div>
+            <div style="color:var(--blue);font-weight:600;font-size:13px">to Ceylin Aslan · arrives in 1–2 days</div>
           </div>
           <div class="card reviewcard" style="margin-bottom:18px">
-            <div class="rr"><span class="k">TO</span><div><div style="font-weight:700">Ceylin Aslan</div><div class="muted" style="font-size:13px">Intesa  IT •••• 1234</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
-            <div class="rr"><span class="k">FROM</span><div><div style="font-weight:700">Main Account</div><div class="muted" style="font-size:13px">€2.180,45</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
-            <div class="rr"><span class="k">TYPE</span><div><div style="font-weight:700">Standart</div><div class="muted" style="font-size:13px">Free</div></div><span class="muted" style="margin-left:auto">⌄</span></div>
-            <div class="rr"><span class="k">DATE</span><div><div style="font-weight:700">Today</div><div class="muted" style="font-size:13px">24 May</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
+            <div class="rr"><span class="k">TO</span><div><div style="font-weight:700;font-size:14px">Ceylin Aslan</div><div class="muted" style="font-size:11px">Intesa  IT •••• 1234</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
+            <div class="rr"><span class="k">FROM</span><div><div style="font-weight:700;font-size:14px">Main Account</div><div class="muted" style="font-size:11px">€2.180,45</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
+            <div class="rr"><span class="k">TYPE</span><div><div style="font-weight:700;font-size:14px">Standart</div><div class="muted" style="font-size:11px">Free</div></div><span class="muted" style="margin-left:auto">⌄</span></div>
+            <div class="rr"><span class="k">DATE</span><div><div style="font-weight:700;font-size:14px">Today</div><div class="muted" style="font-size:11px">24 May</div></div><span class="link" style="margin-left:auto">EDIT</span></div>
           </div>
           <div class="infobox" style="margin-bottom:22px">ⓘ After confirming, you'll get a notification when the money arrives.</div>
-          <div class="center muted" style="margin-bottom:6px;font-size:14px">▣ Hold to confirm with Face ID</div>
+          <div class="center muted" style="margin-bottom:6px;font-size:12px">▣ Hold to confirm with Face ID</div>
         </div>
       </div>
       <div class="pad" style="padding-bottom:10px">
@@ -431,17 +431,17 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row between" style="margin:6px 0 16px"><span class="h-title">Spending</span><span style="font-size:22px">◔</span></div>
+          <div class="row between" style="margin:6px 0 16px"><span class="h-title">Spending</span><span style="font-size:17px">◔</span></div>
           <div class="dropdown" style="justify-content:space-between;margin-bottom:16px">May 2026 <span class="muted">⌄</span></div>
-          <div class="card fcard"><div class="top"><div><div class="h">Forecasted Movements</div><div class="big">€170,95</div></div><span class="link">VIEW</span></div><div class="muted" style="font-size:13px;margin-top:4px">Still due in 24 May · updated 16 May</div></div>
+          <div class="card fcard"><div class="top"><div><div class="h">Forecasted Movements</div><div class="big">€170,95</div></div><span class="link">VIEW</span></div><div class="muted" style="font-size:11px;margin-top:4px">Still due in 24 May · updated 16 May</div></div>
           <div class="card fcard">
-            <div class="top"><div><div class="h">Monthly Forecast</div><div class="big">€3.500 <span class="muted" style="font-size:14px;font-weight:500">Scheduled Out/In</span> <span style="color:var(--green);font-size:14px;font-weight:700">+€1.000 net</span></div></div></div>
-            <div class="muted" style="font-size:13px;margin-top:2px">updated 16 May</div>
+            <div class="top"><div><div class="h">Monthly Forecast</div><div class="big">€3.500 <span class="muted" style="font-size:12px;font-weight:500">Scheduled Out/In</span> <span style="color:var(--green);font-size:12px;font-weight:700">+€1.000 net</span></div></div></div>
+            <div class="muted" style="font-size:11px;margin-top:2px">updated 16 May</div>
             <div class="bar"><span data-width="60%"></span></div>
-            <div class="row between" style="margin-top:8px;font-size:12px"><span class="muted">Balance €2.500</span><span class="muted">Est. Balance €3.500</span></div>
+            <div class="row between" style="margin-top:8px;font-size:11px"><span class="muted">Balance €2.500</span><span class="muted">Est. Balance €3.500</span></div>
           </div>
           <div class="infobox red" style="margin:6px 0 20px">ⓘ <div>After confirming, you'll get a notification when the money arrives.<br><button class="chip" style="background:#fff;border:1px solid var(--line);color:var(--navy);margin-top:10px" onclick="go('sp-categories','forward')">SET BUDGETS &amp; ALERTS ›</button></div></div>
-          <div class="muted" style="font-size:16px;margin-bottom:12px">Spending Analysis</div>
+          <div class="muted" style="font-size:14px;margin-bottom:12px">Spending Analysis</div>
           <div class="analysis tap" onclick="go('sp-income','forward')"><div class="ic">💸</div><span style="font-weight:600;flex:1">Income and Expenses</span><span class="muted">›</span></div>
           <div class="analysis tap" onclick="go('sp-categories','forward')"><div class="ic">📊</div><span style="font-weight:600;flex:1">Spending Categories</span><span class="muted">›</span></div>
         </div>
@@ -455,13 +455,13 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row" style="gap:8px;margin:6px 0 16px"><button class="back" onclick="back()">‹</button><span style="font-size:24px;font-weight:800;color:var(--navy)">Income and Expenses</span></div>
+          <div class="row" style="gap:8px;margin:6px 0 16px"><button class="back" onclick="back()">‹</button><span style="font-size:18px;font-weight:800;color:var(--navy)">Income and Expenses</span></div>
           <div class="segment" style="margin-bottom:18px"><div class="seg" onclick="segPick(this)">1 month</div><div class="seg on" onclick="segPick(this)">2 months</div><div class="seg" onclick="segPick(this)">3 months</div><div class="seg" onclick="go('sp-custom','forward')">Custom</div></div>
-          <div class="muted" style="font-size:16px;margin-bottom:6px">April – May 2026</div>
+          <div class="muted" style="font-size:14px;margin-bottom:6px">April – May 2026</div>
           <div class="chart">
-            <div class="grp"><div class="bars"><div class="bcol bin" data-grow="200px"></div><div class="bcol bout" data-grow="120px"></div></div><div class="glabel">Apr</div></div>
-            <div class="grp"><div class="bars"><div class="bcol bin" data-grow="180px"></div><div class="bcol bout" data-grow="100px"></div></div><div class="glabel">May</div></div>
-            <div class="grp"><div class="bars"><div class="bcol bin est" data-grow="185px"></div><div class="bcol bout est" data-grow="95px"></div></div><div class="glabel">Jun (est)</div></div>
+            <div class="grp"><div class="bars"><div class="bcol bin" data-grow="190px"></div><div class="bcol bout" data-grow="115px"></div></div><div class="glabel">Apr</div></div>
+            <div class="grp"><div class="bars"><div class="bcol bin" data-grow="172px"></div><div class="bcol bout" data-grow="95px"></div></div><div class="glabel">May</div></div>
+            <div class="grp"><div class="bars"><div class="bcol bin est" data-grow="176px"></div><div class="bcol bout est" data-grow="90px"></div></div><div class="glabel">Jun (est)</div></div>
           </div>
           <div class="legend">
             <div class="legrow"><span class="dot" style="background:#3a9d8e"></span> Money in <span style="width:24px"></span> <span class="dot" style="background:#1d5f9c"></span> Money out</div>
@@ -481,14 +481,14 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row" style="gap:8px;margin:6px 0 16px"><button class="back" onclick="back()">‹</button><span style="font-size:24px;font-weight:800;color:var(--navy)">Custom range</span></div>
+          <div class="row" style="gap:8px;margin:6px 0 16px"><button class="back" onclick="back()">‹</button><span style="font-size:18px;font-weight:800;color:var(--navy)">Custom range</span></div>
           <div class="label">Period</div>
           <div class="row" style="gap:12px;margin-bottom:18px">
-            <div class="field"><div class="muted" style="font-size:12px">start date</div>📅 1 Apr 2026</div>
-            <div class="field"><div class="muted" style="font-size:12px">end date</div>📅 15 May 2026</div>
+            <div class="field"><div class="muted" style="font-size:11px">start date</div>📅 1 Apr 2026</div>
+            <div class="field"><div class="muted" style="font-size:11px">end date</div>📅 15 May 2026</div>
           </div>
           <div class="cal"><div class="calhead"><span style="cursor:pointer">‹</span><span>May 2026</span><span style="cursor:pointer">›</span></div><div class="calgrid" id="calgrid"></div></div>
-          <div class="muted" style="margin:16px 0 4px">Or jump to a preset:</div>
+          <div class="muted" style="margin:16px 0 4px;font-size:12px">Or jump to a preset:</div>
           <div class="preset">
             <button class="chip" onclick="toast('Preset: last 30 days')">last 30 days</button>
             <button class="chip" onclick="toast('Preset: this quarter')">this quarter</button>
@@ -508,12 +508,12 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row between" style="margin:6px 0 14px"><div class="row" style="gap:8px"><button class="back" onclick="back()">‹</button><span style="font-size:22px;font-weight:800;color:var(--navy)">Spending Categories</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
+          <div class="row between" style="margin:6px 0 14px"><div class="row" style="gap:8px"><button class="back" onclick="back()">‹</button><span style="font-size:17px;font-weight:800;color:var(--navy)">Spending Categories</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
           <div class="donutwrap">
-            <svg id="donut" width="180" height="180" viewBox="0 0 180 180">
+            <svg id="donut" width="172" height="172" viewBox="0 0 180 180">
               <g id="donut-segs"></g>
-              <text x="90" y="86" text-anchor="middle" font-size="28" font-weight="800" fill="#0d2235">€741</text>
-              <text x="90" y="108" text-anchor="middle" font-size="14" fill="#8a97a6">spent</text>
+              <text x="90" y="86" text-anchor="middle" font-size="26" font-weight="800" fill="#0d2235">€741</text>
+              <text x="90" y="106" text-anchor="middle" font-size="13" fill="#8a97a6">spent</text>
             </svg>
           </div>
           <div class="card" style="padding:4px 16px;margin-bottom:18px" data-stagger>
@@ -535,19 +535,19 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row between" style="margin:6px 0 14px"><div class="row" style="gap:8px"><button class="back" onclick="back()">‹</button><span style="font-size:22px;font-weight:800;color:var(--navy)">🚗 Transport</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
+          <div class="row between" style="margin:6px 0 14px"><div class="row" style="gap:8px"><button class="back" onclick="back()">‹</button><span style="font-size:17px;font-weight:800;color:var(--navy)">🚗 Transport</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
           <div class="center" style="margin-bottom:18px">
-            <div class="muted" style="font-size:14px">Spent this month</div>
-            <div style="font-size:36px;font-weight:800;color:var(--navy)">€ 330,23</div>
-            <div class="muted" style="font-size:14px">45% of spending · <span class="up" style="font-weight:600">↑12% vs April</span></div>
+            <div class="muted" style="font-size:12px">Spent this month</div>
+            <div style="font-size:28px;font-weight:800;color:var(--navy)">€ 330,23</div>
+            <div class="muted" style="font-size:12px">45% of spending · <span class="up" style="font-weight:600">↑12% vs April</span></div>
           </div>
           <div class="card" style="padding:16px;margin-bottom:18px">
-            <div class="muted" style="font-size:13px">Monthly Budget</div>
-            <div class="row between" style="margin-top:4px"><span style="font-size:18px;font-weight:800;color:var(--navy)">€330 of €400</span><span class="muted" style="font-size:13px">€70 left · 9 days</span></div>
+            <div class="muted" style="font-size:11px">Monthly Budget</div>
+            <div class="row between" style="margin-top:4px"><span style="font-size:15px;font-weight:800;color:var(--navy)">€330 of €400</span><span class="muted" style="font-size:11px">€70 left · 9 days</span></div>
             <div class="bar budget"><span data-width="82%"></span></div>
-            <div class="muted" style="font-size:12px;margin-top:6px">82% used</div>
+            <div class="muted" style="font-size:11px;margin-top:6px">82% used</div>
           </div>
-          <div class="muted" style="font-size:15px;margin-bottom:6px">Transactions</div>
+          <div class="muted" style="font-size:13px;margin-bottom:6px">Transactions</div>
           <div class="card" style="padding:0 16px;margin-bottom:18px" data-stagger>
             <div class="txn"><div class="ava">🏧</div><div class="info"><div class="nm">ATM Milano Centrale</div><div class="tm">23 May 2026</div></div><div class="val">€ 90,00</div></div>
             <div class="txn" style="border-top:1px solid var(--line)"><div class="ava">🚆</div><div class="info"><div class="nm">Trenord Monthly Pass</div><div class="tm">15 May 2026</div></div><div class="val">€ 39,00</div></div>
@@ -559,16 +559,16 @@
       </div>
       <div class="sheet-scrim" data-sheet="sheet-budget" onclick="closeSheet('sheet-budget')"></div>
       <div class="sheet" id="sheet-budget">
-        <div class="row between" style="margin-bottom:18px"><div class="row" style="gap:10px"><button class="back" onclick="closeSheet('sheet-budget')">✕</button><span style="font-size:20px;font-weight:800;color:var(--navy)">Budget &amp; Alert</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
+        <div class="row between" style="margin-bottom:18px"><div class="row" style="gap:10px"><button class="back" onclick="closeSheet('sheet-budget')">✕</button><span style="font-size:16px;font-weight:800;color:var(--navy)">Budget &amp; Alert</span></div><div class="dropdown">May 2026 <span class="muted">⌄</span></div></div>
         <div class="label">Category</div>
         <div class="field" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px"><span style="font-weight:600">Transport</span><span class="muted">⌄</span></div>
         <div class="label">Monthly Limit</div>
         <div class="field" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span style="font-weight:600">€ 400,00</span><span class="muted">⌄</span></div>
-        <div class="muted" style="font-size:13px;margin-bottom:18px">Smart Suggestion: Your last 3 months average is €315 per month here.</div>
+        <div class="muted" style="font-size:11px;margin-bottom:18px">Smart Suggestion: Your last 3 months average is €315 per month here.</div>
         <div class="label">Warn Me When I Reach</div>
-        <div class="row between"><span style="font-weight:800;font-size:18px;color:var(--navy)" id="warnpct">80%</span><span class="muted" id="warnval">320 of 400</span></div>
+        <div class="row between"><span style="font-weight:800;font-size:15px;color:var(--navy)" id="warnpct">80%</span><span class="muted" id="warnval" style="font-size:12px">320 of 400</span></div>
         <input type="range" min="50" max="90" step="5" value="80" oninput="updateWarn(this.value)">
-        <div class="row between muted" style="font-size:12px;margin-top:-6px"><span>50%</span><span>60%</span><span>70%</span><span>80%</span><span>90%</span></div>
+        <div class="row between muted" style="font-size:11px;margin-top:-6px"><span>50%</span><span>60%</span><span>70%</span><span>80%</span><span>90%</span></div>
         <div class="infobox" style="margin:16px 0 22px" id="warnbox">ⓘ We will notify you when Transport spending reaches €320.</div>
         <button class="btn-primary" onclick="saveBudget()">Save Budget</button>
         <button class="btn-ghost" onclick="closeSheet('sheet-budget')">Cancel</button>
@@ -581,12 +581,12 @@
       <div class="statusbar"><span>9:41</span><span class="right">●●● 􀙇 100%</span></div>
       <div class="scroll">
         <div class="pad">
-          <div class="row between" style="margin:6px 0 16px"><span class="h-title">Spending</span><span class="iconbtn" style="font-size:22px">≡</span></div>
+          <div class="row between" style="margin:6px 0 16px"><span class="h-title">Spending</span><span class="iconbtn" style="font-size:17px">≡</span></div>
           <div class="dropdown" style="justify-content:space-between;margin-bottom:16px">May 2026 <span class="muted">⌄</span></div>
-          <div class="card fcard"><div class="h">Forecasted Movements</div><div class="big">€170,95</div><div class="muted" style="font-size:13px;margin-top:2px">Still due in 24 May · updated 16 May</div><div class="link" style="margin-top:8px" onclick="go('sp-transport','forward')">Set Budget &amp; Alerts ›</div></div>
-          <div class="card fcard"><div class="h">Monthly Forecast</div><div class="big">€3.500</div><div class="muted" style="font-size:13px;margin-top:2px">updated 16 May</div><div class="bar"><span data-width="60%"></span></div><div class="row between" style="margin-top:8px;font-size:12px"><span class="muted">Balance €2.500</span><span class="muted">Est. Balance €3.500</span></div></div>
+          <div class="card fcard"><div class="h">Forecasted Movements</div><div class="big">€170,95</div><div class="muted" style="font-size:11px;margin-top:2px">Still due in 24 May · updated 16 May</div><div class="link" style="margin-top:8px" onclick="go('sp-transport','forward')">Set Budget &amp; Alerts ›</div></div>
+          <div class="card fcard"><div class="h">Monthly Forecast</div><div class="big">€3.500</div><div class="muted" style="font-size:11px;margin-top:2px">updated 16 May</div><div class="bar"><span data-width="60%"></span></div><div class="row between" style="margin-top:8px;font-size:11px"><span class="muted">Balance €2.500</span><span class="muted">Est. Balance €3.500</span></div></div>
           <div class="infobox red pop" style="margin:6px 0 20px">⚠️ <div>You have used 82% of your Transport budget.<br><span style="font-weight:500">€330 of €400 spent · 9 days left</span><br><span class="link" style="color:var(--red);text-decoration:underline" onclick="go('sp-transport','forward')">Set Budget &amp; Alerts ›</span></div></div>
-          <div class="muted" style="font-size:16px;margin-bottom:12px">Spending Analysis</div>
+          <div class="muted" style="font-size:14px;margin-bottom:12px">Spending Analysis</div>
           <div class="analysis tap" onclick="go('sp-income','forward')"><div class="ic" style="background:#e0f3ea">💹</div><span style="font-weight:600;flex:1">Income &amp; Expenses</span><span class="muted">›</span></div>
           <div class="analysis tap" onclick="go('sp-categories','forward')"><div class="ic" style="background:#e2ecf7">📊</div><span style="font-weight:600;flex:1">Spending Categories</span><span class="muted">›</span></div>
         </div>
